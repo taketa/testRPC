@@ -26,8 +26,10 @@
 3) Creating another node
 `geth --datadir "/Users/USERNAME/PrivChain2" init genesis.json`
 4) Log into the geth console for each node   
-```geth --datadir PrivChain1 --networkid 111 --rpc --port 30301 --rpcapi "eth,web3,personal,net,miner,admin,debug"  --nodiscover console
-geth --datadir PrivChain1 --networkid 111 --rpc --port 30302 --rpcapi "eth,web3,personal,net,miner,admin,debug"  --nodiscover console``` 
+```
+geth --datadir PrivChain1 --networkid 111 --rpc --port 30301 --rpcapi "eth,web3,personal,net,miner,admin,debug"  --nodiscover console
+geth --datadir PrivChain1 --networkid 111 --rpc --port 30302 --rpcapi "eth,web3,personal,net,miner,admin,debug"  --nodiscover console
+``` 
 **--networkid** is similar to in the `genesis.json` file, where all we want here is to make sure we’re not using network ids 1-4.  
 **--port** specifies which port our .ipc file will be using. That’s the way we’ll connect with the database using the web3.js library. The default port is 30303, so we’ll keep it in that area, but this is our first node, so 30301 it is.  
 **--nodiscover** tells geth to not look for peers initially. This is actually important in our case. This is a private network. We don’t want nodes to try to connect to other nodes without me specifying, and we don’t want these nodes to be discovered without us telling them.  
