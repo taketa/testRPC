@@ -1,0 +1,28 @@
+=============== Jun 8, 2018 (EEST) ===============
+15:53:37.985655 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:53:38.044096 db@open opening
+15:53:38.045064 version@stat F·[] S·0B[] Sc·[]
+15:53:38.075045 db@janitor F·2 G·0
+15:53:38.075083 db@open done T·30.945602ms
+=============== Jun 8, 2018 (EEST) ===============
+15:53:57.018809 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:53:57.018926 version@stat F·[] S·0B[] Sc·[]
+15:53:57.018934 db@open opening
+15:53:57.018986 journal@recovery F·1
+15:53:57.037827 journal@recovery recovering @1
+15:53:57.080798 memdb@flush created L0@2 N·9 S·584B "H\x94/..\xa2X\x8a,v3":"r\x00\x00..\xa2X\x8a,v5"
+15:53:57.086841 version@stat F·[1] S·584B[584B] Sc·[0.25]
+15:53:57.142787 db@janitor F·3 G·0
+15:53:57.142865 db@open done T·123.915541ms
+15:55:24.463234 db@close closing
+15:55:24.463385 db@close done T·120.366µs
+=============== Jun 8, 2018 (EEST) ===============
+15:55:32.857879 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:55:32.857996 version@stat F·[1] S·584B[584B] Sc·[0.25]
+15:55:32.858005 db@open opening
+15:55:32.858043 journal@recovery F·1
+15:55:32.861964 journal@recovery recovering @3
+15:55:32.898944 memdb@flush created L0@5 N·3 S·290B "Blo..ion,v11":"dbU..ata,v12"
+15:55:32.906930 version@stat F·[2] S·874B[874B] Sc·[0.50]
+15:55:32.960930 db@janitor F·4 G·0
+15:55:32.961026 db@open done T·102.967399ms
