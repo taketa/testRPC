@@ -1,5 +1,5 @@
 ## Private Blockchain Creation
-To create a single node, we need the following genesis.json, which represents the initial block on the private blockchain.
+1) To create a single node, we need the following genesis.json, which represents the initial block on the private blockchain.
 ``` 
 //genesis.json
 {
@@ -20,3 +20,5 @@ To create a single node, we need the following genesis.json, which represents th
  "gasLimit": "0xffffffff"
 }
 ```
+2) Initialize the blockchain for this node.
+`geth --datadir "/Users/USERNAME/PrivChain" init genesis.json`
