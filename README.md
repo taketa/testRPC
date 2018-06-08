@@ -20,5 +20,5 @@
  "gasLimit": "0xffffffff"
 }
 ```
-2) Initialize the blockchain for this node.
+2) Initialize the blockchain for this node.  
 `geth --datadir "/Users/USERNAME/PrivChain" init genesis.json`
