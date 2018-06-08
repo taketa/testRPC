@@ -1,5 +1,8 @@
 ## Private Blockchain Creation
+<<<<<<< HEAD
 To create a single node, we need the following genesis.json, which represents the initial block on the private blockchain.
+=======
+>>>>>>> cbfa47c0fc64023109b595a7f4a6e7740e82f7bd
 ``` 
 //genesis.json
 {
