@@ -35,7 +35,28 @@ geth --datadir PrivChain1 --networkid 111 --rpc --port 30302 --rpcapi "eth,web3,
 **--nodiscover** tells geth to not look for peers initially. This is actually important in our case. This is a private network. We don’t want nodes to try to connect to other nodes without me specifying, and we don’t want these nodes to be discovered without us telling them.  
 5) Connecting Nodes as Peers  
   - check to see if we have peers.
+    `admin.peers`
   - `admin.nodeInfo.enode`  
     `"enode://13b835d68917bd4970502b53d8125db1e124b466f6473361c558ea481e31ce4197843ec7d8684011b15ce63def5eeb73982d04425af3a0b6f3437a030878c8a9@[::]:30301?discport=0"`
   - connect the nodes using url  
     `admin.addPeer("enode://13b835d68917bd4970502b53d8125db1e124b466f6473361c558ea481e31ce4197843ec7d8684011b15ce63def5eeb73982d04425af3a0b6f3437a030878c8a9@[::]:30301?discport=0")`
+  - check that peer connects 
+    ```
+admin.peers
+[{
+    caps: ["eth/63"],
+    id: "99bf59fe629dbea3cb3da94be4a6cff625c40da21dfffacddc4f723661aa1aa77cd4fb7921eb437b0d5e9333c01ed57bfc0d433b9f718a2c95287d3542f2e9a8",
+    name: "Geth/v1.7.1-stable-05101641/darwin-amd64/go1.9.1",
+    network: {
+        localAddress: "[::1]:30301",
+        remoteAddress: "[::1]:50042"
+    },
+    protocols: {
+        eth: {
+            difficulty: 935232,
+            head: "0x8dd2dc7968328c8bbd5aacc53f87e590a469e5bde3945bee0f6ae13392503d17",
+            version: 63
+        }
+    }
+}]
+```
