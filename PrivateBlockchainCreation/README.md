@@ -35,7 +35,7 @@ geth --datadir PrivChain1 --networkid 111 --rpc --port 30302 --rpcapi "eth,web3,
 **--nodiscover** tells geth to not look for peers initially. This is actually important in our case. This is a private network. We don’t want nodes to try to connect to other nodes without me specifying, and we don’t want these nodes to be discovered without us telling them.  
 5) Connecting Nodes as Peers  
   - check to see if we have peers.
-  - `> admin.nodeInfo.enode`  
+  - `admin.nodeInfo.enode`  
     `"enode://13b835d68917bd4970502b53d8125db1e124b466f6473361c558ea481e31ce4197843ec7d8684011b15ce63def5eeb73982d04425af3a0b6f3437a030878c8a9@[::]:30301?discport=0"`
   - connect the nodes using url  
-    `> admin.addPeer("enode://13b835d68917bd4970502b53d8125db1e124b466f6473361c558ea481e31ce4197843ec7d8684011b15ce63def5eeb73982d04425af3a0b6f3437a030878c8a9@[::]:30301?discport=0")`
+    `admin.addPeer("enode://13b835d68917bd4970502b53d8125db1e124b466f6473361c558ea481e31ce4197843ec7d8684011b15ce63def5eeb73982d04425af3a0b6f3437a030878c8a9@[::]:30301?discport=0")`
