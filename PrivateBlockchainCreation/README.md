@@ -21,7 +21,7 @@
 }
 ```
 2) Initialize the blockchain for this node.  
-`geth --datadir PrivChain1 init genesis.json`
+`geth --datadir PrivChain1 init genesis.json`  
 --datadir specifies where we want the all the data for the blockchain to be located.
 3) Creating another node
 `geth --datadir PrivChain2 init genesis.json`
